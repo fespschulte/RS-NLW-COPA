@@ -5,14 +5,22 @@
 * SQLite para o banco de dados
 * Diagrama ERD (Entidades de Relacionamento)
 * Contagem de bolões
+** Estrutura do banco de dados e relacionamento, Criação de seed do banco de dados, Criação do novo bolão, Contagem de usuários, Contagem de palpites
 
 # Front-end
 
-...
+* React
+* Next.js
+* Contagem dos bolões
+** ...
 
 # Mobile
 
-...
+* React Native
+* Expo - Expo Go
+* NativeBase
+* Assets, Splash Screen, SignIn e Loading 
+** ...
 
 
 Anotações
