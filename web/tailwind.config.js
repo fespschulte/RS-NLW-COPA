@@ -9,6 +9,9 @@ module.exports = {
         sans: 'Roboto, sans-serif'
       },
       colors: {
+        ignite: {
+          500: "#129E57",
+        },
         gray: {
           900: '#121214', 
         }
