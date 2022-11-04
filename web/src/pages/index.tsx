@@ -4,7 +4,7 @@ import logoImg from './../assets/logo.svg'
 import usersAvatarExampleImg from './../assets/users-avatar-example.png'
 import iconCheck from './../assets/icon-check.svg'
 import { api } from '../lib/axios'
-import { useState } from 'react'
+import { FormEvent, useState } from 'react'
 
 interface HomeProps {
   poolCount: number;
