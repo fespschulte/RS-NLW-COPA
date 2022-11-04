@@ -21,7 +21,7 @@
 * NativeBase
 * Assets, Splash Screen, SignIn e Loading 
 
-*** Utilização do SVG como componente React Native (logo), tipando SVG, Criação de componentes, Criação de contexto, Criação de hook para compartilhar o contexto, compartilhar dados através do contexto
+*** Utilização do SVG como componente React Native (logo), tipando SVG, Criação de componentes, Criação de contexto, Criação de hook para compartilhar o contexto, compartilhar dados através do contexto, Autenticação de login com google, 
 
 
 Anotações
