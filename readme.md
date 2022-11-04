@@ -5,14 +5,14 @@
 * SQLite para o banco de dados
 * Diagrama ERD (Entidades de Relacionamento)
 * Contagem de bolões
-** Estrutura do banco de dados e relacionamento, Criação de seed do banco de dados, Criação do novo bolão, Contagem de usuários, Contagem de palpites
+** Estrutura do banco de dados e relacionamento, Criação de seed do banco de dados, Criação do novo bolão, Contagem de usuários, Contagem de palpites, lib zod para validação dos dados, lib short unique id para passagem do code, uso do axios
 
 # Front-end
 
 * React
 * Next.js
 * Contagem dos bolões
-** ...
+** Utilização do tailwindcss para estilização
 
 # Mobile
 
