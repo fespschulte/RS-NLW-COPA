@@ -3,7 +3,7 @@ import { NativeBaseProvider, StatusBar } from "native-base";
 
 import { Loading } from './src/components/Loading';
 import { AuthContextProvider } from './src/contexts/AuthContext';
-import { New } from './src/screens/New';
+import { Find } from './src/screens/Find';
 
 import { THEME } from './src/styles/theme';
 
@@ -18,7 +18,7 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
-        { fontsLoaded ? <New /> : <Loading /> }
+        { fontsLoaded ? <Find /> : <Loading /> }
       </AuthContextProvider>
     </NativeBaseProvider>
   );
