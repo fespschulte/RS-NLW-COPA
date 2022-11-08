@@ -1,4 +1,5 @@
 import Fastify from "fastify"
+import jwt from "@fastify/jwt"
 import cors from '@fastify/cors'
 
 import { poolRoutes } from "./routes/pool"
@@ -12,15 +13,20 @@ async function bootstrap() {
     logger: true,
   })
   
-  await fastify.register (cors, {
+  await fastify.register(cors, {
     origin: true,
   })
 
-  fastify.register (poolRoutes)
-  fastify.register (authRoutes)
-  fastify.register (guessRoutes)
-  fastify.register (gameRoutes)
-  fastify.register (userRoutes)
+  // Em produção isso precisa ser uma variável ambiente 
+  await fastify.register(jwt, {
+    secret: 'nlwcopa',
+  })
+
+  fastify.register(poolRoutes)
+  fastify.register(authRoutes)
+  fastify.register(guessRoutes)
+  fastify.register(gameRoutes)
+  fastify.register(userRoutes)
 
   await fastify.listen({ port: 3333, /*host: '0.0.0.0'*/ })
 }
