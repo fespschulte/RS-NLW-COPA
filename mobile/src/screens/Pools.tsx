@@ -4,8 +4,9 @@ import { Octicons } from '@expo/vector-icons'
 import { useNavigation } from'@react-navigation/native'
 import { api } from '../services/api'
 
-import { Button } from "../components/Button"
-import { Header } from "../components/Header"
+import { Button } from '../components/Button'
+import { Header } from '../components/Header'
+import { Loading } from '../components/Loading'
 import { PoolCard } from '../components/PoolCard'
 
 export function Pools() {
