@@ -15,20 +15,23 @@ export function Find() {
   async function handleJoinPool(){
     try{
       setIsLoading(true)
-      if(!code){
+      if(!code.trim()){
         return toast.show({
           title: 'Informe o código do bolão',
           placement: 'top',
           bgColor: 'red.500'
         })
       }
-
-      await api.post('/pools/join', {code})
+      await api.post('/pools/join', { code })
+      toast.show({
+        title: 'Você entrou no bolão com sucesso',
+        placement: 'top',
+        bgColor: 'green.500'
+      })
       navigate('pools')
-      console.log()
-
     } catch(error) {
       console.log(error)
+      setIsLoading(false)
       if(error.response?.data?.message === 'Pool not found'){
         return toast.show({
           title: 'Bolão não encontrado',
@@ -52,7 +55,7 @@ export function Find() {
       setIsLoading(false)
     }
   }
-
+  
   return (
     <VStack flex={1} bgColor="gray.900">
       <Header title="Buscar por código" showBackButton />
