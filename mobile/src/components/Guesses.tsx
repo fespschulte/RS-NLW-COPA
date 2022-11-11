@@ -74,7 +74,7 @@ export function Guesses({ poolId, code }: Props) {
 
   useEffect(() => {
     fetchGames();
-  }, []);
+  }, [poolId]);
 
   if (isLoading) {
     return <Loading />

@@ -7,7 +7,7 @@ import { api } from '../services/api';
 
 import { Header } from '../components/Header';
 import { Loading } from '../components/Loading';
-import { PoolCardPros } from '../components/PoolCard';
+import { PoolCardProps } from '../components/PoolCard';
 import { PoolHeader } from '../components/PoolHeader';
 import { EmptyMyPoolList } from '../components/EmptyMyPoolList';
 import { Option } from '../components/Option';
@@ -20,7 +20,7 @@ interface RoutePrams {
 export function Details() {
   const [optionSelected, setOptionSelected] = useState<'guesses' | 'ranking'>('guesses')
   const [isLoading, setIsLoading] = useState(true);
-  const [poolDetails, setPoolDetails] = useState<PoolCardPros>({} as PoolCardPros);
+  const [poolDetails, setPoolDetails] = useState<PoolCardProps>({} as PoolCardProps);
 
   const route = useRoute();
   const toast = useToast();
