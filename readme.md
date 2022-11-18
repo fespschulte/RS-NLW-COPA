@@ -28,3 +28,4 @@
 
 Anotações
 * dependência tsx para rodar o node com ts
+*
