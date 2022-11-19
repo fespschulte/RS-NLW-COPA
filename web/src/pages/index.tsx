@@ -42,7 +42,7 @@ export default function Home(props: HomeProps) {
         <div className="mt-10 flex items-center gap-2">
           <Image src ={usersAvatarExampleImg} alt="Imagens de usuários"/>
           <strong className="text-gray-100 text-xl">
-            <span className="text-ignite-500">+{props.userCount}</span> pessoas já estão usando
+            <span className="text-ignite-500">+{props.userCount}</span> pessoas já estão usando!
           </strong>
         </div>
         <form onSubmit={createPool} className="mt-10 flex gap-2" action="">
