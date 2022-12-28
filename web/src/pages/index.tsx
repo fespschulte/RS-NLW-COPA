@@ -36,7 +36,7 @@ export default function Home(props: HomeProps) {
       <main className="">
         <Image src={logoImg} alt="logotipo do nlw" />
         <h1 className="mt-16 text-white text-5xl font-bold leading-tight">
-          Crie seu próprio bolão da copa e compartilhe entre amigos!
+          Crie seu próprio bolão da copa e compartilhe com seus amigos!
         </h1>
 
         <div className="mt-10 flex items-center gap-2">
